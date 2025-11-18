@@ -143,7 +143,7 @@ body {
   left: 0;
   width: 200%;
   height: 100%;
-  background: url('/images/forest.png');
+  background: url(/images/forest.png);
   /* Using forest as base for fog texture, ideally use a specific fog texture */
   background-size: cover;
   opacity: 0.1;
@@ -261,7 +261,7 @@ body {
 .nav-ornament-right {
   width: 30px;
   height: 30px;
-  background: url('/images/filigree.png') center/contain no-repeat;
+  background: url(/images/filigree.png) center/contain no-repeat;
   opacity: 0.7;
 }
 
@@ -350,15 +350,15 @@ body {
 }
 
 .page[data-bg="forest"] {
-  background-image: url('/images/forest.png');
+  background-image: url(/images/forest.png);
 }
 
 .page[data-bg="castle"] {
-  background-image: url('/images/castle.png');
+  background-image: url(/images/castle.png);
 }
 
 .page[data-bg="morality"] {
-  background-image: url('/images/morality.png');
+  background-image: url(/images/morality.png);
 }
 
 .page-content {
@@ -401,7 +401,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/images/parchment.png');
+  background: url(/images/parchment.png);
   opacity: 0.15;
   border-radius: 8px;
   pointer-events: none;
@@ -421,7 +421,7 @@ body {
   position: absolute;
   width: 80px;
   height: 80px;
-  background: url('/images/filigree.png') center/contain no-repeat;
+  background: url(/images/filigree.png) center/contain no-repeat;
   opacity: 0.6;
 }
 
@@ -447,7 +447,7 @@ body {
   font-family: var(--font-heading);
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 900;
-  background: url('/images/filigree.png') center/cover;
+  background: url(/images/filigree.png) center/cover;
   /* Texture overlay */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
