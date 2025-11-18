@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Fable - A New Chapter Begins | Coming 2026</title>
+  <meta name="description"
+    content="Embark on a legendary journey through Albion in the highly anticipated Fable reboot. Shape your destiny, choose your morality, and experience a world of magic and wonder. Coming 2026.">
+  <meta name="keywords" content="Fable, Fable 2026, RPG, fantasy game, Albion, morality system, action RPG">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fable - A New Chapter Begins">
+  <meta property="og:description" content="Shape your destiny in the magical world of Albion. Coming 2026.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Atmospheric Fog -->
+  <div class="fog-container">
+    <div class="fog-layer"></div>
+    <div class="fog-layer"></div>
+  </div>
+
+  <!-- Audio Elements -->
+  <audio id="ambient-music" loop>
+    <!-- Using a royalty-free fantasy ambient track placeholder -->
+    <!-- In production, add actual music file: <source src="/audio/ambient.mp3" type="audio/mpeg"> -->
+  </audio>
+
+  <!-- Audio Control -->
+  <button id="audio-toggle" class="audio-control" aria-label="Toggle Audio">
+    <span class="icon-sound-on">🔊</span>
+    <span class="icon-sound-off" style="display: none;">🔇</span>
+  </button>
+
+  <!-- Navigation Menu (In-Game Style) -->
+  <nav id="main-nav" class="glass-panel">
+    <div class="nav-ornament"></div>
+    <ul class="nav-menu">
+      <li><a href="#hero" class="nav-link active" data-page="hero">The Hero's Tale</a></li>
+      <li><a href="#albion" class="nav-link" data-page="albion">Albion Awaits</a></li>
+      <li><a href="#destiny" class="nav-link" data-page="destiny">Your Destiny</a></li>
+    </ul>
+    <div class="nav-ornament-right"></div>
+  </nav>
+
+  <!-- Page 1: The Hero's Tale -->
+  <section id="hero" class="page active" data-bg="forest">
+    <div class="page-content">
+      <div class="book-container">
+        <div class="book-page">
+          <div class="ornate-border">
+            <h1 class="title-main glow-text">
+              <span class="title-fable">FABLE</span>
+              <span class="title-subtitle">A New Chapter Begins</span>
+            </h1>
+
+            <div class="content-divider reveal scale-in"></div>
+
+            <p class="intro-text reveal fade-up">
+              In the mystical land of Albion, legends are not written—they are lived.
+              Every choice carves your path, every action shapes your soul.
+            </p>
+
+            <div class="hero-stats reveal fade-up">
+              <div class="stat-item stagger-1">
+                <span class="stat-icon">⚔️</span>
+                <span class="stat-label">Epic Combat</span>
+              </div>
+              <div class="stat-item stagger-2">
+                <span class="stat-icon">🌟</span>
+                <span class="stat-label">Dynamic World</span>
+              </div>
+              <div class="stat-item stagger-3">
+                <span class="stat-icon">⚖️</span>
+                <span class="stat-label">Moral Choices</span>
+              </div>
+            </div>
+
+            <button class="cta-button reveal scale-in" onclick="scrollToPage('albion')">
+              <span class="button-glow"></span>
+              Begin Your Journey
+            </button>
+
+            <div class="release-info">
+              <p class="release-text">Coming 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 2: Albion Awaits -->
+  <section id="albion" class="page" data-bg="castle">
+    <div class="page-content">
+      <div class="book-container">
+        <div class="book-page">
+          <div class="ornate-border">
+            <h2 class="page-title glow-text">The World of Albion</h2>
+
+            <div class="content-divider"></div>
+
+            <div class="world-description">
+              <p class="lore-text">
+                A realm where magic flows through ancient forests and forgotten ruins whisper
+                tales of heroes long past. Albion is a living, breathing world that reacts to
+                your every decision.
+              </p>
+
+              <div class="feature-grid">
+                <div class="feature-card glass-panel reveal fade-up stagger-1">
+                  <div class="feature-icon">🏰</div>
+                  <h3>Vast Kingdoms</h3>
+                  <p>Explore bustling cities, hidden villages, and treacherous dungeons across a seamless open world.
+                  </p>
+                </div>
+
+                <div class="feature-card glass-panel reveal fade-up stagger-2">
+                  <div class="feature-icon">🌲</div>
+                  <h3>Living Ecosystems</h3>
+                  <p>Witness dynamic weather, day-night cycles, and creatures that behave with stunning realism.</p>
+                </div>
+
+                <div class="feature-card glass-panel reveal fade-up stagger-3">
+                  <div class="feature-icon">✨</div>
+                  <h3>Ancient Magic</h3>
+                  <p>Master powerful spells, forge legendary weapons, and unlock mystical abilities.</p>
+                </div>
+
+                <div class="feature-card glass-panel reveal fade-up stagger-4">
+                  <div class="feature-icon">👥</div>
+                  <h3>Rich Characters</h3>
+                  <p>Form friendships, rivalries, and romances with unforgettable companions.</p>
+                </div>
+              </div>
+
+              <blockquote class="quote-box">
+                <p class="quote-text">
+                  "Your reputation precedes you, Hero. Will you be remembered as
+                  a beacon of hope or a harbinger of darkness?"
+                </p>
+                <cite>— The Guild Master</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 3: Your Destiny -->
+  <section id="destiny" class="page" data-bg="morality">
+    <div class="page-content">
+      <div class="book-container">
+        <div class="book-page">
+          <div class="ornate-border">
+            <h2 class="page-title glow-text">Shape Your Destiny</h2>
+
+            <div class="content-divider"></div>
+
+            <p class="lore-text centered">
+              In Fable, you are not bound by class or destiny. Your choices define who you become.
+            </p>
+
+            <div class="morality-system">
+              <div class="morality-path good">
+                <div class="path-icon">☀️</div>
+                <h3>Path of Light</h3>
+                <p>Embrace virtue, protect the innocent, and become a beacon of hope for Albion.</p>
+                <ul class="path-perks">
+                  <li>Revered by citizens</li>
+                  <li>Angelic transformations</li>
+                  <li>Holy abilities</li>
+                </ul>
+              </div>
+
+              <div class="morality-divider">
+                <div class="choice-symbol">⚖️</div>
+              </div>
+
+              <div class="morality-path evil">
+                <div class="path-icon">🌙</div>
+                <h3>Path of Darkness</h3>
+                <p>Seize power through fear, dominate your foes, and let corruption fuel your strength.</p>
+                <ul class="path-perks">
+                  <li>Feared by enemies</li>
+                  <li>Demonic transformations</li>
+                  <li>Dark magic mastery</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="customization-info">
+              <h3 class="section-heading">Forge Your Legend</h3>
+              <div class="custom-grid">
+                <div class="custom-item">
+                  <span class="custom-icon">⚔️</span>
+                  <span>Weapon Mastery</span>
+                </div>
+                <div class="custom-item">
+                  <span class="custom-icon">👤</span>
+                  <span>Character Evolution</span>
+                </div>
+                <div class="custom-item">
+                  <span class="custom-icon">🎭</span>
+                  <span>Reputation System</span>
+                </div>
+                <div class="custom-item">
+                  <span class="custom-icon">💍</span>
+                  <span>Relationships</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="final-cta">
+              <p class="cta-text">The fate of Albion rests in your hands</p>
+              <p class="wishlist-text">Stay tuned for more revelations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="game-footer">
+    <p>&copy; 2026 Fable. All rights reserved. | Playground Games | Xbox Game Studios</p>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
