@@ -20,7 +20,9 @@ An incredibly designed, immersive website for the upcoming Fable game, featuring
 
 ## 🎮 Live Demo
 
-Visit the website at `http://localhost:5173/` after running the development server.
+**[View Live Website](https://abdullah-mubashir.github.io/Fable-website-Antigravity-IDE/)**
+
+The website is automatically deployed to GitHub Pages on every push to the main branch.
 
 ## 🚀 Quick Start
 
